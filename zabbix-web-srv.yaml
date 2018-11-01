@@ -44,6 +44,15 @@ spec:
               key: password
         - name: ZBX_SERVER_HOST
           value: zabbix-server
+        livenessProbe:
+          # an http probe
+          httpGet:
+            path: /
+            port: 80
+          # length of time to wait for a pod to initialize
+          # after pod startup, before applying health checking
+          initialDelaySeconds: 20
+          timeoutSeconds: 1
         ports:
         - containerPort: 80
           name: zabbix-web
