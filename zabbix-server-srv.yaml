@@ -44,16 +44,16 @@ spec:
         readinessProbe:
           # tcp
           tcpSocket:
-          periodSeconds: 20
             port: 10051
           # length of time to wait for a pod to initialize
           # after pod startup, before applying health checking
+          periodSeconds: 20
           initialDelaySeconds: 30
         livenessProbe:
           # tcp
           tcpSocket:
-          periodSeconds: 20
             port: 10051
+          periodSeconds: 20
           # length of time to wait for a pod to initialize
           # after pod startup, before applying health checking
           initialDelaySeconds: 30
