@@ -23,7 +23,7 @@ spec:
         app: zabbix-server
     spec:
       containers:
-      - image: docker.io/zabbix/zabbix-server-mysql:alpine-3.4.13
+      - image: docker.io/zabbix/zabbix-server-mysql:alpine-3.4.14
         name: zabbix-server
         env:
           # Use secret in real usage

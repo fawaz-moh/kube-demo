@@ -24,7 +24,7 @@ spec:
         app: zabbix-web
     spec:
       containers:
-      - image: docker.io/zabbix/zabbix-web-nginx-mysql:alpine-3.4.13
+      - image: docker.io/zabbix/zabbix-web-nginx-mysql:alpine-3.4.14
         name: zabbix-web
         env:
           # Use secret in real usage
