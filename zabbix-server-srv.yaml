@@ -37,6 +37,13 @@ spec:
     spec:
       containers:
       - image: docker.io/zabbix/zabbix-server-mysql:alpine-3.4.14
+        resources:
+          limits:
+            cpu: 500m
+            memory: "400Mi"
+          requests:
+            cpu: 200m
+            memory: "200Mi"
         name: zabbix-server
         env:
           # Use secret in real usage
